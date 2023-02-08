@@ -7,11 +7,6 @@ export const StoryCard = ({ src, alt, title, text }) => {
     h: { base: '496px', xl: '446px' },
     borderRadius: '8px',
     overflow: 'hidden',
-    transition: '0.5s',
-
-    _hover: {
-      boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.5)',
-    },
   }
 
   const rectangle = {
