@@ -9,8 +9,6 @@ import { Footer } from './layout/Footer'
 
 import './main.css'
 
-import { PageElements } from './layout/components/PageElements'
-
 export const App = () => {
   return (
     <>
@@ -22,7 +20,6 @@ export const App = () => {
       <Testimonials />
       <Stories />
       <Footer />
-      <PageElements />
     </>
   )
 }
