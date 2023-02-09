@@ -40,6 +40,9 @@ export const Stories = () => {
               className="arrowIcon"
               href="#top"
               fontSize={{ base: '3.5vh', md: '17px' }}
+              color="#fb8f1d"
+              transition="0.3s"
+              _hover={{ textDecoration: 'none', color: '#202336' }}
             >
               <Flex alignItems="center" gap="11px">
                 View all
