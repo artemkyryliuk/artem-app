@@ -19,15 +19,14 @@ import el3 from '../assets/icons/el3.svg'
 
 export const Hero = () => {
   const select = {
-    mr: { base: '0px', md: '30px', lg: '-10px', xl: '30px' },
-    w: { base: '82vw', md: '36.5vw', lg: '41vw', xl: '220px' },
+    mr: { base: '30px', md: '30px', lg: '-10px', xl: '30px' },
+    w: { base: '82vw', md: '82vw', lg: '41vw', xl: '220px' },
     h: '52px',
     fontWeight: '400',
     fontSize: '15px',
     lineHeight: '32px',
     color: '#4A4C53',
     border: '1px solid #AFB0B9',
-
     _hover: {
       border: '1px solid #202336',
     },
@@ -73,19 +72,13 @@ export const Hero = () => {
                   placeholder="Location"
                   {...select}
                 >
-                  {[
-                    'Ukraine',
-                    'Germany',
-                    'Chikipukiland',
-                    'Switzerland',
-                    'Austria',
-                    'Africa',
-                    'China',
-                  ].map((el, index) => (
-                    <option key={'loc_' + el} value={el}>
-                      {el}
-                    </option>
-                  ))}
+                  {['Ukraine', 'Germany', 'Chikipukiland', 'Switzerland'].map(
+                    (el) => (
+                      <option key={el} value={el}>
+                        {el}
+                      </option>
+                    )
+                  )}
                 </Select>
               </WrapItem>
               <WrapItem>
@@ -95,7 +88,7 @@ export const Hero = () => {
                   {...select}
                 >
                   {['Popular', 'Best'].map((el) => (
-                    <option key={'act_' + el} value={el}>
+                    <option key={el} value={el}>
                       {el}
                     </option>
                   ))}
@@ -103,15 +96,8 @@ export const Hero = () => {
               </WrapItem>
               <WrapItem>
                 <Select icon={<SelectArrow />} placeholder="Grade" {...select}>
-                  {[
-                    'Excellent',
-                    'Very good',
-                    'Good',
-                    'No bad',
-                    'Bad',
-                    'Very bad',
-                  ].map((el) => (
-                    <option key={'gr_' + el} value={el}>
+                  {['Excellent', 'Very good', 'Good'].map((el) => (
+                    <option key={el} value={el}>
                       {el}
                     </option>
                   ))}
@@ -133,7 +119,7 @@ export const Hero = () => {
                     'November',
                     'December',
                   ].map((el) => (
-                    <option key={'date_' + el} value={el}>
+                    <option key={el} value={el}>
                       {el}
                     </option>
                   ))}

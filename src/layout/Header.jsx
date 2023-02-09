@@ -35,8 +35,8 @@ export const Header = () => {
           </Link>
           <Spacer />
           <HStack
-            spacing={{ base: '15px', lg: '34px' }}
-            pr={{ base: '15px', lg: '34px' }}
+            spacing={{ base: '14px', lg: '34px' }}
+            pr={{ base: '14px', lg: '34px' }}
           >
             <Link
               href="#top"
