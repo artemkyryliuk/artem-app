@@ -1,13 +1,7 @@
-import {
-  Center,
-  Flex,
-  Box,
-  Heading,
-  Text,
-  Image,
-  Button,
-} from '@chakra-ui/react'
+import { Center, Flex, Box, Heading, Text, Image } from '@chakra-ui/react'
 
+import { IconElement } from './components/IconElement'
+import { Button } from './components/Button'
 import guides from '../assets/images/guides.png'
 import el9 from '../assets/icons/el9.svg'
 import el10 from '../assets/icons/el10.svg'
@@ -16,27 +10,9 @@ import el11 from '../assets/icons/el11.svg'
 export const Guides = () => {
   return (
     <>
-      <Image
-        src={el9}
-        pos="absolute"
-        top="47.33%"
-        left="89.36%"
-        pointerEvents="none"
-      />
-      <Image
-        src={el10}
-        pos="absolute"
-        top="48.19%"
-        left="17.81%"
-        pointerEvents="none"
-      />
-      <Image
-        src={el11}
-        pos="absolute"
-        top="54.19%"
-        left="41.44%"
-        pointerEvents="none"
-      />
+      <IconElement src={el9} top="47.33%" left="89.36%" />
+      <IconElement src={el10} top="48.19%" left="17.81%" />
+      <IconElement src={el11} top="54.19%" left="41.44%" />
       <Center>
         <Flex
           align="center"
@@ -72,20 +48,8 @@ export const Guides = () => {
               mt="39px"
               w={{ base: '180px', xl: '164px' }}
               h={{ base: '52px', xl: '48px' }}
-              color="#fff"
-              bg="#FB8F1D"
-              borde="1px solid #FB8F1D"
-              borderRadius="8px"
-              fontWeight="500"
-              fontSize="15px"
-              _hover={{
-                bg: '#202336',
-                border: '#202336',
-                boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)',
-              }}
-            >
-              Download
-            </Button>
+              text="Download"
+            />
           </Box>
           <Box display={{ base: 'none', lg: 'block' }} pl="80px">
             <Image src={guides} minW="300px" w="599px" />

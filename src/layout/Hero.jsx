@@ -6,11 +6,12 @@ import {
   Wrap,
   WrapItem,
   Select,
-  Button,
   Image,
 } from '@chakra-ui/react'
 
+import { IconElement } from './components/IconElement'
 import { SelectArrow } from './components/SelectArrow'
+import { Button } from './components/Button'
 import hero from '../assets/images/hero.png'
 import el1 from '../assets/icons/el1.svg'
 import el2 from '../assets/icons/el2.svg'
@@ -34,27 +35,9 @@ export const Hero = () => {
 
   return (
     <>
-      <Image
-        src={el1}
-        pos="absolute"
-        top="3.94%"
-        left="41.86%"
-        pointerEvents="none"
-      />
-      <Image
-        src={el2}
-        pos="absolute"
-        top="8.84%"
-        left="5%"
-        pointerEvents="none"
-      />
-      <Image
-        src={el3}
-        pos="absolute"
-        top="14.01%"
-        left="45.75%"
-        pointerEvents="none"
-      />
+      <IconElement src={el1} top="3.94%" left="41.86%" />
+      <IconElement src={el2} top="8.84%" left="5%" />
+      <IconElement src={el3} top="14.01%" left="45.75%" />
       <Center>
         <Flex
           pos="relative"
@@ -157,24 +140,7 @@ export const Hero = () => {
                 </Select>
               </WrapItem>
             </Wrap>
-            <Button
-              mt="47px"
-              w="180px"
-              h="52px"
-              color="#fff"
-              bg="#FB8F1D"
-              border="1px solid #FB8F1D"
-              borderRadius="8px"
-              fontWeight="500"
-              fontSize="15px"
-              _hover={{
-                bg: '#202336',
-                border: '#202336',
-                boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)',
-              }}
-            >
-              Explore
-            </Button>
+            <Button mt="47px" w="180px" h="52px" text="Explore" />
           </Box>
           <Box display={{ base: 'none', xl: 'block' }}>
             <Image src={hero} alt="Hero Image" w="687px" />

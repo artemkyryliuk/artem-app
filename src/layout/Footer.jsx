@@ -127,19 +127,19 @@ export const Footer = () => {
               <Box w={{ base: '100%', xl: '1220px' }} h="0.6px" bg="#C4C4C4" />
               <HStack align="flex-end" spacing="35px" pt="31px">
                 <Link href="#top">
-                  <Image src={twitter} alt="Twitter Icon" />
+                  <Image src={twitter} alt="Twitter" />
                 </Link>
                 <Link href="#top">
-                  <Image src={facebook} alt="Facebook Icon" />
+                  <Image src={facebook} alt="Facebook" />
                 </Link>
                 <Link href="#top">
-                  <Image src={instagram} alt="Instagram Icon" />
+                  <Image src={instagram} alt="Instagram" />
                 </Link>
                 <Link href="#top">
-                  <Image src={linkedin} alt="Linkedin Icon" />
+                  <Image src={linkedin} alt="Linkedin" />
                 </Link>
                 <Link href="#top">
-                  <Image src={youtube} alt="Youtube Icon" />
+                  <Image src={youtube} alt="Youtube" />
                 </Link>
               </HStack>
             </Flex>

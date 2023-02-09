@@ -9,6 +9,7 @@ import {
   Link,
 } from '@chakra-ui/react'
 
+import { IconElement } from './components/IconElement'
 import star from '../assets/icons/star.svg'
 import photo from '../assets/images/photo.png'
 import prevArrow from '../assets/icons/previous.svg'
@@ -28,28 +29,9 @@ export const Testimonials = () => {
 
   return (
     <>
-      <Image
-        src={el12}
-        pos="absolute"
-        top="61.62%"
-        left="77.12%"
-        pointerEvents="none"
-      />
-      <Image
-        src={el13}
-        pos="absolute"
-        top="65.31%"
-        left="6%"
-        pointerEvents="none"
-      />
-      <Image
-        src={el14}
-        pos="absolute"
-        top="70.29%"
-        left="53.98%"
-        zIndex="2"
-        pointerEvents="none"
-      />
+      <IconElement src={el12} top="61.62%" left="77.12%" />
+      <IconElement src={el13} top="65.31%" left="6%" />
+      <IconElement src={el14} top="70.29%" left="53.98%" zIndex="2" />
       <Center>
         <Flex
           direction="column"

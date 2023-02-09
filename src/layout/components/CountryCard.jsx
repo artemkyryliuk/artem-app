@@ -1,15 +1,31 @@
-import { Flex, Link, Image, Box, Text } from '@chakra-ui/react'
+import { Flex, Link, Image, Box, Text, keyframes } from '@chakra-ui/react'
 
-export const CountryCard = ({ src, alt, t1, t2 }) => {
+export const CountryCard = ({ animDelay = '0s', src, alt, t1, t2 }) => {
+  const upDown = keyframes`
+
+  from {
+    transform: translateX(0px)
+  }
+  
+  50% {
+    transform: translateX(20px);
+  }
+
+  to {
+    transform: translateX(0px)
+  }`
+
+  const anim = `${upDown} 4s ease-in-out ${animDelay} infinite`
+
   return (
-    <Flex h="261px">
-      <Link _hover={{ textDecoration: 'none' }}>
+    <Flex h="261px" mb="300px">
+      <Link _hover={{ textDecoration: 'none' }} animation={{ lg: anim }}>
         <Image
           src={src}
           alt={alt}
           borderRadius="8px"
           pos="relative"
-          w={{ base: '450px', md: '420px' }}
+          w={{ base: '400px', md: '420px' }}
         />
         <Box
           pos="relative"

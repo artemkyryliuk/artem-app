@@ -1,15 +1,8 @@
-import {
-  Center,
-  Flex,
-  Link,
-  Image,
-  Spacer,
-  HStack,
-  Button,
-} from '@chakra-ui/react'
+import { Center, Flex, Link, Image, Spacer, HStack } from '@chakra-ui/react'
 
 import logo from '../assets/icons/logo.svg'
 import { MobileDrawer } from './components/MobileDrawer'
+import { Button } from './components/Button'
 
 export const Header = () => {
   const link = {
@@ -61,45 +54,8 @@ export const Header = () => {
             <Link {...link}>Partner</Link>
           </HStack>
           <HStack spacing="18px">
-            <Button
-              w="132px"
-              h="44px"
-              bg="#fff"
-              fontFamily="Inter"
-              fontWeight="500"
-              fontSize="15px"
-              lineHeight="60px"
-              color="#FB8F1D"
-              border="1px solid #FB8F1D"
-              borderRadius="8px"
-              _hover={{
-                bg: '#202336',
-                color: '#fff',
-                border: '1px solid #202336',
-                boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)',
-              }}
-            >
-              Login
-            </Button>
-            <Button
-              w="132px"
-              h="44px"
-              bg="#FB8F1D"
-              fontFamily="Inter"
-              fontWeight="500"
-              fontSize="15px"
-              lineHeight="60px"
-              color="#fff"
-              border="1px solid #FB8F1D"
-              borderRadius="8px"
-              _hover={{
-                bg: '#202336',
-                border: '1px solid #202336',
-                boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)',
-              }}
-            >
-              Register
-            </Button>
+            <Button w="132px" h="44px" bg="#fff" color="#FB8F1D" text="Login" />
+            <Button w="132px" h="44px" text="Register" />
           </HStack>
         </Flex>
       </Center>
