@@ -57,7 +57,7 @@ export const MobileDrawer = () => {
         onClose={onClose}
         finalFocusRef={btnRef}
       >
-        <DrawerOverlay bg="rgba(13,95,66,0.8)">
+        <DrawerOverlay>
           <DrawerContent>
             <DrawerCloseButton mt={6} />
             <DrawerBody>
