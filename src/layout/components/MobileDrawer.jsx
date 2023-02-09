@@ -47,6 +47,7 @@ export const MobileDrawer = () => {
         h="60px"
         fontSize="30px"
         colorScheme="orange"
+        boxShadow="0px 0px 20px rgba(0, 0, 0, 0.3)"
         onClick={onOpen}
       >
         ☰
@@ -58,7 +59,7 @@ export const MobileDrawer = () => {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay>
-          <DrawerContent>
+          <DrawerContent boxShadow="0px 0px 40px rgba(0, 0, 0, 0.5)">
             <DrawerCloseButton mt={6} />
             <DrawerBody>
               <Flex direction="column" mt={5}>

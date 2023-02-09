@@ -1,8 +1,8 @@
 import { Center, Box, Flex, Heading, Link } from '@chakra-ui/react'
-import { useState } from 'react'
 
 import { IconElement } from './components/IconElement'
 import { ReactComponent as ArrowIcon } from '../assets/icons/arrow.svg'
+import './styles.css'
 import { CountryCard } from './components/CountryCard'
 import Indonesia from '../assets/images/country1.png'
 import China from '../assets/images/country2.png'
@@ -13,12 +13,6 @@ import el7 from '../assets/icons/el7.svg'
 import el8 from '../assets/icons/el8.svg'
 
 export const Destinations = () => {
-  const [isHovered, setHovered] = useState(false)
-
-  const toggleState = () => {
-    setHovered(() => !isHovered)
-  }
-
   return (
     <>
       <IconElement src={el6} top="34.06%" left="73.86%" />
@@ -43,19 +37,13 @@ export const Destinations = () => {
               Featured destinations
             </Heading>
             <Link
+              className="arrowIcon"
               href="#top"
-              fontWeight="600"
-              fontSize="17px"
-              lineHeight="60px"
-              color="#FB8F1D"
-              transition="0s"
-              _hover={{ textDecoration: 'none', color: '#202336' }}
-              onMouseEnter={toggleState}
-              onMouseLeave={toggleState}
+              fontSize={{ base: '3.5vh', md: '17px' }}
             >
               <Flex alignItems="center" gap="11px">
                 View all
-                <ArrowIcon stroke={isHovered ? '#202336' : '#FB8F1D'} />
+                <ArrowIcon />
               </Flex>
             </Link>
           </Flex>

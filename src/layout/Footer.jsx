@@ -10,7 +10,7 @@ import youtube from '../assets/icons/youtube.svg'
 export const Footer = () => {
   const navLink = {
     fontWeight: '700',
-    fontSize: '19px',
+    fontSize: { base: '6vw', md: '19px' },
     lineHeight: '60px',
     color: '#000',
     _hover: {
@@ -21,8 +21,8 @@ export const Footer = () => {
   const link = {
     href: '#top',
     fontWeight: '300',
-    fontSize: '18px',
-    lineHeight: '38px',
+    fontSize: { base: '5.7vw', md: '18px' },
+    lineHeight: { base: '12vw', md: '38px' },
     textDecoration: 'none',
     _hover: {
       textDecoration: 'none',
@@ -64,7 +64,7 @@ export const Footer = () => {
                       pt="26px"
                       w={{ base: '100%', xl: '341px' }}
                       fontWeight="300"
-                      fontSize="18px"
+                      fontSize={{ base: '5.7vw', md: '18px' }}
                       lineHeight="28px"
                     >
                       Plan and book your perfect trip with expert advice, travel
@@ -74,7 +74,7 @@ export const Footer = () => {
                       pt={{ base: '16px', xl: '56px' }}
                       w={{ base: '100%', lg: '391px' }}
                       fontWeight="300"
-                      fontSize="18px"
+                      fontSize={{ base: '5.7vw', md: '18px' }}
                       lineHeight="28px"
                     >
                       ©2020 Thousand Sunny. All rights reserved

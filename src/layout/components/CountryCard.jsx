@@ -18,7 +18,7 @@ export const CountryCard = ({ animDelay = '0s', src, alt, t1, t2 }) => {
   const anim = `${upDown} 4s ease-in-out ${animDelay} infinite`
 
   return (
-    <Flex h="261px" mb={{ base: '300px', md: '0px' }}>
+    <Flex h="261px" mb={{ base: '200px', md: '0px' }}>
       <Link _hover={{ textDecoration: 'none' }} animation={{ lg: anim }}>
         <Image
           src={src}

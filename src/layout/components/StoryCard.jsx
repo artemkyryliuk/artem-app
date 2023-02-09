@@ -23,7 +23,7 @@ export const StoryCard = ({ src, alt, title, text }) => {
           pt={{ base: '20px', md: '14px' }}
           pl={{ md: '50px', lg: '0px' }}
           fontWeight="700"
-          fontSize={{ base: '6vw', md: '24px', lg: '19px' }}
+          fontSize={{ base: '5.5vw', md: '24px', lg: '19px' }}
           lineHeight={{ base: '134%', md: '30px' }}
           noOfLines={{ base: 3, md: 2 }}
         >
@@ -45,7 +45,7 @@ export const StoryCard = ({ src, alt, title, text }) => {
           pt="23px"
           pl={{ md: '50px', lg: '0px' }}
           fontWeight="600"
-          fontSize={{ base: '6vw', md: '24px', lg: '15px' }}
+          fontSize={{ base: '5vw', md: '24px', lg: '15px' }}
           lineHeight={{ base: '120%', md: '28px' }}
           color="#FB8F1D"
         >

@@ -1,0 +1,13 @@
+.arrowIcon {
+  font-weight: 600;
+  line-height: 60px;
+  color: #fb8f1d;
+  stroke: #fb8f1d;
+  transition: 0.3s;
+}
+
+.arrowIcon:hover {
+  color: #202336;
+  stroke: #202336;
+  text-decoration: none;
+}

@@ -76,7 +76,7 @@ export const Testimonials = () => {
               <Text
                 mt="40px"
                 fontWeight="700"
-                fontSize="22px"
+                fontSize={{ base: '7vw', md: '22px' }}
                 lineHeight="48px"
               >
                 Edward Newgate
@@ -84,7 +84,7 @@ export const Testimonials = () => {
               <Text
                 mt="-11px"
                 fontWeight="400"
-                fontSize="18px"
+                fontSize={{ base: '5vw', md: '18px' }}
                 lineHeight="48px"
               >
                 Founder Circle

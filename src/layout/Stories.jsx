@@ -1,8 +1,8 @@
 import { Center, Box, Flex, Heading, Link } from '@chakra-ui/react'
-import { useState } from 'react'
 
 import { IconElement } from './components/IconElement'
 import { ReactComponent as ArrowIcon } from '../assets/icons/arrow.svg'
+import './styles.css'
 import { StoryCard } from './components/StoryCard'
 import story1 from '../assets/images/story1.png'
 import story2 from '../assets/images/story2.png'
@@ -13,11 +13,6 @@ import el16 from '../assets/icons/el16.svg'
 import el17 from '../assets/icons/el17.svg'
 
 export const Stories = () => {
-  const [isHovered, setHovered] = useState(false)
-
-  const toggleState = () => {
-    setHovered(() => !isHovered)
-  }
   return (
     <>
       <IconElement src={el15} top="75.62%" left="40.41%" />
@@ -42,19 +37,13 @@ export const Stories = () => {
               Trending stories
             </Heading>
             <Link
+              className="arrowIcon"
               href="#top"
-              fontWeight="600"
-              fontSize="17px"
-              lineHeight="60px"
-              color="#FB8F1D"
-              transition="0s"
-              _hover={{ textDecoration: 'none', color: '#202336' }}
-              onMouseEnter={toggleState}
-              onMouseLeave={toggleState}
+              fontSize={{ base: '3.5vh', md: '17px' }}
             >
               <Flex alignItems="center" gap="11px">
                 View all
-                <ArrowIcon stroke={isHovered ? '#202336' : '#FB8F1D'} />
+                <ArrowIcon />
               </Flex>
             </Link>
           </Flex>
