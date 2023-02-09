@@ -74,7 +74,7 @@ export const Footer = () => {
                       pt={{ base: '16px', xl: '56px' }}
                       w={{ base: '100%', lg: '391px' }}
                       fontWeight="300"
-                      fontSize={{ base: '5.7vw', md: '18px' }}
+                      fontSize={{ base: '5.7vw', md: '17px' }}
                       lineHeight="28px"
                     >
                       ©2020 Thousand Sunny. All rights reserved
